@@ -1,11 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Header } from 'semantic-ui-react'
 
-const ImageBox = (props) => {
+import './ImageBox.scss'
+
+const ImageBox = ({title, teaser, link, background}) => {
   return (
-    <span>
-      image-box
-    </span>
+    <div className="background-box image-box" style={{backgroundImage: `url(${background})`}}>
+      <Header as="h2" className="white">{title}</Header>
+
+      <div className="image-box__description">
+        <span>{teaser}</span>
+        <span className="image-box__read-more">
+          {link}
+        </span>
+      </div>
+    </div>
   )
 }
 

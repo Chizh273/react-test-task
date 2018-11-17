@@ -1,11 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Button, Header, Icon } from 'semantic-ui-react'
 
-const ButtonBox = (props) => {
+import './ButtonBox.scss'
+
+const ButtonBox = ({title, link, url, background}) => {
   return (
-    <span>
-      button-box
-    </span>
+    <div className="background-box button-box" style={{backgroundImage: `url(${background})`}}>
+      <Header as="h2" className="white">{title}</Header>
+
+      <a
+        className="button-box__link"
+        href={url}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Button color="red" className="button-box__button">
+          {link}
+          <Icon name='angle right' />
+        </Button>
+      </a>
+    </div>
   )
 }
 
