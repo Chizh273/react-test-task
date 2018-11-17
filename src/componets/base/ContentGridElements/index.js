@@ -1,17 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Grid from '../../helper/Grid'
 
-const ContentGridElements = ({children}) => (
+const ContentGridElements = ({Children}) => (
   <div className="content-grid-elements">
-    {children}
+    <Grid grid={Children}/>
   </div>
 )
 
 ContentGridElements.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired
+  Children: PropTypes.object.isRequired
 }
 
 export default ContentGridElements

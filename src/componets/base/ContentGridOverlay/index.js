@@ -1,17 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Grid from '../../helper/Grid'
 
-const ContentGridOverlay = ({children}) => (
+const ContentGridOverlay = ({Children}) => (
   <div className="content-grid-overlay">
-    {children}
+    <Grid grid={Children}/>
   </div>
 )
 
 ContentGridOverlay.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired
+  Children: PropTypes.object.isRequired
 }
 
 export default ContentGridOverlay
