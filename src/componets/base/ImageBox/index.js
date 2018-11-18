@@ -9,13 +9,17 @@ const ImageBox = ({title, teaser, link, background, path, contextModalUpdatePath
   <div
     className="background-box image-box"
     style={{backgroundImage: `url(${background})`}}
-    onClick={() => contextModalUpdatePath(path)}
   >
     <Header as="h2" className="white">{title}</Header>
 
     <div className="image-box__description">
       <span>{teaser}</span>
-      <span className="image-box__read-more">{link}</span>
+      <span
+        className="image-box__read-more"
+        onClick={() => contextModalUpdatePath(path)}
+      >
+        {link}
+      </span>
     </div>
   </div>
 )
