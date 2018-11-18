@@ -3,16 +3,25 @@ import PropTypes from 'prop-types'
 import Element from '../Element'
 import mapToArray from '../../../utils/mapToArray'
 
-const Grid = ({grid}) => mapToArray(grid).map(item => (
-  <Element
-    key={item.id}
-    Content={item.Content}
-    Children={item.Children}
-  />
-))
+const Grid = ({grid, wrap = false, wrapClass = ''}) =>
+  mapToArray(grid).map(item => {
+    const element = (
+      <Element
+        key={item.id}
+        Content={item.Content}
+        Children={item.Children}
+      />
+    )
+
+    return wrap
+      ? <div key={item.id} className={wrapClass}>{element}</div>
+      : element
+  })
 
 Grid.propTypes = {
-  grid: PropTypes.object
+  grid: PropTypes.object,
+  wrap: PropTypes.bool,
+  wrapClass: PropTypes.string
 }
 
 export default Grid
