@@ -4,13 +4,19 @@ import Grid from '../../helper/Grid'
 
 import './ContentGridElements.scss'
 
-const ContentGridElements = ({Children}) => (
+const ContentGridElements = ({Children, path}) => (
   <div className="content-grid-elements">
-    <Grid grid={Children} wrap={true} wrapClass="content-grid-elements__item"/>
+    <Grid
+      grid={Children}
+      path={path}
+      itemWrap={true}
+      itemWrapClass="content-grid-elements__item"
+    />
   </div>
 )
 
 ContentGridElements.propTypes = {
+  path: PropTypes.arrayOf(PropTypes.string).isRequired,
   Children: PropTypes.object.isRequired
 }
 

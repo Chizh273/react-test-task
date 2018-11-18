@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ModalProvider from './context/modal/ModalProvider'
 import Grid from './componets/helper/Grid'
 
 import data from './data.json'
@@ -10,7 +11,14 @@ class App extends Component {
   render () {
     const {data} = this.state
 
-    return <Grid grid={data}/>
+    return (
+      <ModalProvider>
+        <Grid
+          grid={data}
+          path={[]}
+        />
+      </ModalProvider>
+    )
   }
 }
 

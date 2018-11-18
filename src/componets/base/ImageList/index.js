@@ -34,12 +34,13 @@ const ImageList = ({headline, subheadline, list, image}) => (
 )
 
 ImageList.propTypes = {
+  path: PropTypes.arrayOf(PropTypes.string).isRequired,
   headline: PropTypes.string.isRequired,
   subheadline: PropTypes.string.isRequired,
   list: PropTypes.arrayOf(
     PropTypes.string
   ).isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
 }
 
 export default ImageList
