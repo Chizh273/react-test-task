@@ -1,12 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Grid from '../../helper/Grid'
+import { Modal, Tab } from 'semantic-ui-react'
 
-const ContentGridOverlay = ({Children}) => (
-  <div className="content-grid-overlay">
-    <Grid grid={Children}/>
-  </div>
-)
+import Element from '../../helper/Element'
+import mapToArray from '../../../utils/mapToArray'
+
+const ContentGridOverlay = ({Children}) => {
+  const panes = mapToArray(Children).map(item => ({
+    menuItem: item.title,
+    render: () => <Element
+      Content={item.Content}
+      Children={item.Children}
+    />
+  }))
+
+  return (
+    <Modal>
+      <Modal.Content>
+        <Tab menu={{secondary: true, pointing: true}} panes={panes}/>
+      </Modal.Content>
+    </Modal>
+  )
+}
 
 ContentGridOverlay.propTypes = {
   Children: PropTypes.object.isRequired
