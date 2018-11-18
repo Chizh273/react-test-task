@@ -79,16 +79,16 @@
 				"Children": {
 					"spot_1": {
 						"Content": {
-							"title": "Surfaces details",
+							"title": "Surfaces",
 							"type": "ImageList",
 							"format": "component",
 							"value": {
 								"headline": "Surfaces",
 								"subheadline": "This decision is not just about the look but also about the feeling",
 								"list": [
-									"quality will especially reflect in the haptics, so consider the touch in your decision", 
-									"some materials appear more massive than others, so stone is better used in large places", 
-									"light colors induce a feeling of lightness and make the kitchen appear more airy", 
+									"quality will especially reflect in the haptics, so consider the touch in your decision",
+									"some materials appear more massive than others, so stone is better used in large places",
+									"light colors induce a feeling of lightness and make the kitchen appear more airy",
 									"eye-catching accessories, tiles, materials or wall colors will shine even more when used next to white faces"
 								],
 								"image": "https://roomtailors.de/files/filestore/file/1339/detailssurface.jpg"
@@ -97,16 +97,16 @@
 					},
 					"spot_2": {
 						"Content": {
-							"title": "Faces details",
+							"title": "Light Faces",
 							"type": "ImageList",
 							"format": "component",
 							"value": {
 								"headline": "Light Faces",
 								"subheadline": "Light faces are unobtrusive and appear friendly and inviting",
 								"list": [
-									"bright faces reflect more light, which is especially useful in small rooms with limited daylight", 
-									"unobtrusive colors are easier to mix and combine with others", 
-									"light colors induce a feeling of lightness and make the kitche more airy", 
+									"bright faces reflect more light, which is especially useful in small rooms with limited daylight",
+									"unobtrusive colors are easier to mix and combine with others",
+									"light colors induce a feeling of lightness and make the kitche more airy",
 									"eye-catching accessories, tiles, materials or wall colors will shine when used next to white faces"
 								],
 								"image": "https://roomtailors.de/files/filestore/file/1334/detailslight.jpg"
@@ -115,16 +115,16 @@
 					},
 					"spot_4": {
 						"Content": {
-							"title": "Wall details",
+							"title": "Walls",
 							"type": "ImageList",
 							"format": "component",
 							"value": {
 								"headline": "Walls",
 								"subheadline": "There are a few wall covering techniques you should be aware of",
 								"list": [
-									"small non-rectangular tiles are the latest trend, inspired by London’s underground", 
-									"ornamental walls are uncommon and will give your kitchen a unique look", 
-									"colored tiles are less prone to dirt and splashes ", 
+									"small non-rectangular tiles are the latest trend, inspired by London’s underground",
+									"ornamental walls are uncommon and will give your kitchen a unique look",
+									"colored tiles are less prone to dirt and splashes ",
 									"when using plain colors, a strong contrast makes your kitchen more remarkable"
 								],
 								"image": "https://roomtailors.de/files/filestore/file/1340/detailswalls.jpg"
